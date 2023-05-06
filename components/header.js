@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={`contenedor ${styles.barra}`}>
-        <Link    href="/">
+        <Link href="/">
           {" "}
           <Image src="/img/logo.svg" alt="logo" width={300} height={40} />
         </Link>
@@ -28,16 +28,16 @@ export default function Header() {
             Nosotros
           </Link>
           <Link
-            href="/blog"
-            className={router.pathname === "/blog" ? styles.active : ""}
-          >
-            Blog
-          </Link>
-          <Link
             href="/tienda"
             className={router.pathname === "/tienda" ? styles.active : ""}
           >
             Tienda
+          </Link>
+          <Link
+            href="/blog"
+            className={router.pathname === "/blog" ? styles.active : ""}
+          >
+            Blog
           </Link>
         </nav>
       </div>
